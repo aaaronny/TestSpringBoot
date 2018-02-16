@@ -28,4 +28,9 @@ public class PersonDaoImpl implements PersonDao {
 		return list;
 	}
 
+	@Override
+	public void add(Person person) {
+		em.persist(person);
+	}
+
 }
